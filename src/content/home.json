@@ -1,0 +1,7 @@
+{
+  "sections": [
+    { "id": "projects", "type": "project-grid", "title": "Progetti", "showInMenu": true },
+    { "id": "instagram", "type": "instagram-feed", "title": "Instagram", "showInMenu": false },
+    { "id": "about", "type": "about", "title": "About", "showInMenu": true }
+  ]
+}

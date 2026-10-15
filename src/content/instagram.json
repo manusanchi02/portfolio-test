@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "image": {
+        "src": "uploads/instagram/placeholder-1.webp",
+        "alt": "Placeholder image"
+      },
+      "caption": "Placeholder caption 1",
+      "url": "#TODO-url",
+      "date": "2026-01-01"
+    },
+    {
+      "image": {
+        "src": "uploads/instagram/placeholder-2.webp",
+        "alt": "Placeholder image"
+      },
+      "caption": "Placeholder caption 2",
+      "url": "#TODO-url",
+      "date": "2026-02-01"
+    },
+    {
+      "image": {
+        "src": "uploads/instagram/placeholder-3.webp",
+        "alt": "Placeholder image"
+      },
+      "caption": "Placeholder caption 3",
+      "url": "#TODO-url",
+      "date": "2026-03-01"
+    },
+    {
+      "image": {
+        "src": "uploads/instagram/placeholder-4.webp",
+        "alt": "Placeholder image"
+      },
+      "caption": "Placeholder caption 4",
+      "url": "#TODO-url",
+      "date": "2026-04-01"
+    }
+  ]
+}

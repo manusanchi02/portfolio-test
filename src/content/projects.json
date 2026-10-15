@@ -1,0 +1,284 @@
+[
+  {
+    "slug": "placeholder-1",
+    "title": "Placeholder project 1",
+    "summary": "Placeholder summary",
+    "visible": true,
+    "banner": {
+      "src": "uploads/placeholder/banner-1.webp",
+      "alt": "Placeholder image"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Placeholder text. <em>Placeholder emphasis</em>."
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "uploads/placeholder/image-landscape.webp",
+          "alt": "Placeholder image"
+        }
+      },
+      {
+        "type": "image-grid",
+        "images": [
+          {
+            "src": "uploads/placeholder/grid-1.webp",
+            "alt": "Placeholder image"
+          },
+          {
+            "src": "uploads/placeholder/grid-2.webp",
+            "alt": "Placeholder image"
+          },
+          {
+            "src": "uploads/placeholder/grid-3.webp",
+            "alt": "Placeholder image"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "uploads/placeholder/image-portrait.webp",
+          "alt": "Placeholder image"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "placeholder-2",
+    "title": "Placeholder project 2",
+    "summary": "Placeholder summary",
+    "visible": true,
+    "banner": {
+      "src": "uploads/placeholder/banner-2.webp",
+      "alt": "Placeholder image"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Placeholder text. <em>Placeholder emphasis</em>."
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "uploads/placeholder/image-landscape.webp",
+          "alt": "Placeholder image"
+        }
+      },
+      {
+        "type": "image-grid",
+        "images": [
+          {
+            "src": "uploads/placeholder/grid-1.webp",
+            "alt": "Placeholder image"
+          },
+          {
+            "src": "uploads/placeholder/grid-2.webp",
+            "alt": "Placeholder image"
+          },
+          {
+            "src": "uploads/placeholder/grid-3.webp",
+            "alt": "Placeholder image"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "uploads/placeholder/image-portrait.webp",
+          "alt": "Placeholder image"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "placeholder-3",
+    "title": "Placeholder project 3",
+    "summary": "Placeholder summary",
+    "visible": true,
+    "banner": {
+      "src": "uploads/placeholder/banner-3.webp",
+      "alt": "Placeholder image"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Placeholder text. <em>Placeholder emphasis</em>."
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "uploads/placeholder/image-landscape.webp",
+          "alt": "Placeholder image"
+        }
+      },
+      {
+        "type": "image-grid",
+        "images": [
+          {
+            "src": "uploads/placeholder/grid-1.webp",
+            "alt": "Placeholder image"
+          },
+          {
+            "src": "uploads/placeholder/grid-2.webp",
+            "alt": "Placeholder image"
+          },
+          {
+            "src": "uploads/placeholder/grid-3.webp",
+            "alt": "Placeholder image"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "uploads/placeholder/image-portrait.webp",
+          "alt": "Placeholder image"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "placeholder-4",
+    "title": "Placeholder project 4",
+    "summary": "Placeholder summary",
+    "visible": true,
+    "banner": {
+      "src": "uploads/placeholder/banner-4.webp",
+      "alt": "Placeholder image"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Placeholder text. <em>Placeholder emphasis</em>."
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "uploads/placeholder/image-landscape.webp",
+          "alt": "Placeholder image"
+        }
+      },
+      {
+        "type": "image-grid",
+        "images": [
+          {
+            "src": "uploads/placeholder/grid-1.webp",
+            "alt": "Placeholder image"
+          },
+          {
+            "src": "uploads/placeholder/grid-2.webp",
+            "alt": "Placeholder image"
+          },
+          {
+            "src": "uploads/placeholder/grid-3.webp",
+            "alt": "Placeholder image"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "uploads/placeholder/image-portrait.webp",
+          "alt": "Placeholder image"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "placeholder-5",
+    "title": "Placeholder project 5",
+    "summary": "Placeholder summary",
+    "visible": true,
+    "banner": {
+      "src": "uploads/placeholder/banner-5.webp",
+      "alt": "Placeholder image"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Placeholder text. <em>Placeholder emphasis</em>."
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "uploads/placeholder/image-landscape.webp",
+          "alt": "Placeholder image"
+        }
+      },
+      {
+        "type": "image-grid",
+        "images": [
+          {
+            "src": "uploads/placeholder/grid-1.webp",
+            "alt": "Placeholder image"
+          },
+          {
+            "src": "uploads/placeholder/grid-2.webp",
+            "alt": "Placeholder image"
+          },
+          {
+            "src": "uploads/placeholder/grid-3.webp",
+            "alt": "Placeholder image"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "uploads/placeholder/image-portrait.webp",
+          "alt": "Placeholder image"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "placeholder-6",
+    "title": "Placeholder project 6",
+    "summary": "Placeholder summary",
+    "visible": true,
+    "banner": {
+      "src": "uploads/placeholder/banner-6.webp",
+      "alt": "Placeholder image"
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Placeholder text. <em>Placeholder emphasis</em>."
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "uploads/placeholder/image-landscape.webp",
+          "alt": "Placeholder image"
+        }
+      },
+      {
+        "type": "image-grid",
+        "images": [
+          {
+            "src": "uploads/placeholder/grid-1.webp",
+            "alt": "Placeholder image"
+          },
+          {
+            "src": "uploads/placeholder/grid-2.webp",
+            "alt": "Placeholder image"
+          },
+          {
+            "src": "uploads/placeholder/grid-3.webp",
+            "alt": "Placeholder image"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "image": {
+          "src": "uploads/placeholder/image-portrait.webp",
+          "alt": "Placeholder image"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "instagram.schema.json",
+  "title": "Instagram posts",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "posts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["image", "caption", "url", "date"],
+        "additionalProperties": false,
+        "properties": {
+          "image": {
+            "allOf": [
+              { "$ref": "common.schema.json#/definitions/image" },
+              {
+                "type": "object",
+                "properties": { "src": { "type": "string", "pattern": "^/?uploads/instagram/" } }
+              }
+            ]
+          },
+          "caption": { "type": "string" },
+          "url": { "type": "string", "pattern": "^(https://www\\.instagram\\.com/.+|#TODO-url)$" },
+          "date": { "type": "string", "format": "date" }
+        }
+      }
+    }
+  }
+}

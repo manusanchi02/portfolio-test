@@ -1,0 +1,43 @@
+@import 'bootstrap/scss/functions';
+@import 'tokens';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
+
+// Only the utilities used by the templates are generated.
+$utilities: map-get-multiple(
+  $utilities,
+  (
+    'border-top',
+    'border-bottom',
+    'display',
+    'flex-direction',
+    'flex-grow',
+    'gap',
+    'justify-content',
+    'margin-top',
+    'margin-bottom',
+    'padding-y',
+    'object-fit',
+    'overflow'
+  )
+);
+
+@import 'bootstrap/scss/root';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/images';
+@import 'bootstrap/scss/containers';
+@import 'bootstrap/scss/grid';
+@import 'bootstrap/scss/transitions';
+@import 'bootstrap/scss/close';
+@import 'bootstrap/scss/nav';
+@import 'bootstrap/scss/navbar';
+@import 'bootstrap/scss/offcanvas';
+@import 'bootstrap/scss/helpers';
+@import 'bootstrap/scss/utilities/api';
+
+@import 'fonts';
+@import 'base';

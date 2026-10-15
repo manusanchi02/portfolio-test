@@ -1,0 +1,19 @@
+// PLACEHOLDER identity: neutral values until colors and fonts are provided.
+// Bootstrap variable overrides live here, before Bootstrap is imported.
+
+$enable-dark-mode: false;
+
+$white: #fff;
+$black: #000;
+$gray-100: #f2f2f2;
+$gray-300: #d9d9d9;
+$gray-600: #666;
+$gray-900: #1a1a1a;
+
+$body-bg: $white;
+$body-color: $black;
+$primary: $black;
+$link-color: $black;
+$link-hover-color: $gray-600;
+
+$font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;

@@ -1,0 +1,9 @@
+{
+  "name": "Placeholder",
+  "description": "Placeholder description",
+  "extraMenuLinks": [],
+  "social": [
+    { "label": "Instagram", "url": "#TODO-url", "external": true }
+  ],
+  "instagramPostsShown": 4
+}

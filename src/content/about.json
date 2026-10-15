@@ -1,0 +1,8 @@
+{
+  "photo": { "src": "uploads/placeholder/about.webp", "alt": "Placeholder image" },
+  "text": "Placeholder text. <em>Placeholder emphasis</em> and a <a href=\"#TODO-url\">placeholder link</a>.",
+  "links": [
+    { "label": "Email", "url": "#TODO-url", "external": false },
+    { "label": "Instagram", "url": "#TODO-url", "external": true }
+  ]
+}

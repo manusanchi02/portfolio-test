@@ -1,0 +1,170 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms@0.242.0/schema/sveltia-cms.json
+# Mirrors the JSON Schemas in schemas/. Keep both in sync.
+
+backend:
+  name: github
+  repo: manusanchi02/portfolio-test
+  branch: main
+
+media_folder: public/uploads
+public_folder: uploads
+
+singletons:
+  - name: site
+    label: Sito e menu
+    file: src/content/site.json
+    fields:
+      - { name: name, label: Nome del sito, widget: string }
+      - { name: description, label: Descrizione (motori di ricerca e anteprime social), widget: text }
+      - name: extraMenuLinks
+        label: Voci extra del menu
+        label_singular: Voce
+        widget: list
+        required: false
+        summary: '{{label}}'
+        fields: &link_fields
+          - { name: label, label: Etichetta, widget: string }
+          - name: url
+            label: URL
+            widget: string
+            hint: Indirizzo completo (https://...), mailto:..., oppure #TODO-url se ancora mancante.
+            pattern: ['^(https?://|mailto:|tel:|#|/).+', "Deve iniziare con https://, http://, mailto:, tel:, # oppure /"]
+          - { name: external, label: Apri in una nuova scheda, widget: boolean, default: false }
+      - name: social
+        label: Link social
+        label_singular: Link
+        widget: list
+        required: false
+        summary: '{{label}}'
+        fields: *link_fields
+      - name: instagramPostsShown
+        label: Numero di post Instagram mostrati
+        widget: number
+        value_type: int
+        default: 3
+        min: 1
+        max: 12
+        required: false
+
+  - name: home
+    label: Sezioni della homepage
+    file: src/content/home.json
+    fields:
+      - name: sections
+        label: Sezioni (l'ordine è quello della pagina)
+        label_singular: Sezione
+        widget: list
+        summary: '{{title}} ({{type}})'
+        fields:
+          - name: id
+            label: Identificativo (usato nell'ancora del menu)
+            widget: string
+            pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', "Solo minuscole, numeri e trattini"]
+          - name: type
+            label: Tipo
+            widget: select
+            options:
+              - { label: Griglia dei progetti, value: project-grid }
+              - { label: Ultimi post Instagram, value: instagram-feed }
+              - { label: About, value: about }
+          - { name: title, label: Titolo, widget: string }
+          - { name: showInMenu, label: Mostra nel menu, widget: boolean, default: true }
+
+  - name: projects
+    label: Progetti
+    file: src/content/projects.json
+    fields:
+      - name: projects
+        label: Progetti (l'ordine è quello della griglia)
+        label_singular: Progetto
+        widget: list
+        root: true
+        summary: '{{title}}'
+        fields:
+          - name: slug
+            label: Slug (compare nell'URL, non cambiarlo dopo la pubblicazione)
+            widget: string
+            pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', "Solo minuscole, numeri e trattini"]
+          - { name: title, label: Titolo, widget: string }
+          - { name: summary, label: Descrizione breve (anteprime social), widget: text, required: false }
+          - { name: visible, label: Visibile, widget: boolean, default: true }
+          - name: banner
+            label: Foto banner
+            widget: object
+            fields: &image_fields
+              - { name: src, label: Immagine, widget: image, choose_url: false }
+              - { name: alt, label: Descrizione dell'immagine (alt), widget: string }
+          - name: blocks
+            label: Blocchi
+            label_singular: Blocco
+            widget: list
+            required: false
+            types:
+              - name: text
+                label: Testo
+                widget: object
+                summary: '{{text}}'
+                fields:
+                  - name: text
+                    label: Testo
+                    widget: text
+                    hint: "HTML inline ammesso solo con <a>, <em> e <strong>."
+                    pattern: ['^(?:[^<]|</?(?:a|em|strong)(?:\s[^<>]*)?>)*$', "Sono ammessi solo i tag <a>, <em> e <strong>"]
+              - name: image
+                label: Foto singola
+                widget: object
+                summary: '{{image.alt}}'
+                fields:
+                  - { name: image, label: Foto, widget: object, fields: *image_fields }
+              - name: image-grid
+                label: Griglia di foto
+                widget: object
+                fields:
+                  - name: images
+                    label: Foto
+                    label_singular: Foto
+                    widget: list
+                    min: 1
+                    summary: '{{alt}}'
+                    fields: *image_fields
+
+  - name: instagram
+    label: Post Instagram
+    file: src/content/instagram.json
+    media_folder: /public/uploads/instagram
+    public_folder: uploads/instagram
+    fields:
+      - name: posts
+        label: Post (mostrati i più recenti per data)
+        label_singular: Post
+        widget: list
+        required: false
+        add_to_top: true
+        summary: '{{date}} {{caption}}'
+        fields:
+          - { name: image, label: Foto, widget: object, fields: *image_fields }
+          - { name: caption, label: Didascalia, widget: text, required: false }
+          - name: url
+            label: Link al post
+            widget: string
+            hint: Indirizzo completo del post (https://www.instagram.com/p/...), oppure #TODO-url se mancante.
+            pattern: ['^(https://www\.instagram\.com/.+|#TODO-url)$', "Deve iniziare con https://www.instagram.com/ oppure essere #TODO-url"]
+          - { name: date, label: Data, widget: datetime, date_format: YYYY-MM-DD, time_format: false, format: YYYY-MM-DD }
+
+  - name: about
+    label: About
+    file: src/content/about.json
+    fields:
+      - { name: photo, label: Foto, widget: object, fields: *image_fields }
+      - name: text
+        label: Testo
+        widget: text
+        hint: "HTML inline ammesso solo con <a>, <em> e <strong>."
+        pattern: ['^(?:[^<]|</?(?:a|em|strong)(?:\s[^<>]*)?>)*$', "Sono ammessi solo i tag <a>, <em> e <strong>"]
+      - name: links
+        label: Link e contatti
+        label_singular: Link
+        widget: list
+        required: false
+        summary: '{{label}}'
+        fields: *link_fields

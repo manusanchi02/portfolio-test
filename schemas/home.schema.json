@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "home.schema.json",
+  "title": "Homepage sections",
+  "type": "object",
+  "required": ["sections"],
+  "additionalProperties": false,
+  "properties": {
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "title", "showInMenu"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "common.schema.json#/definitions/slug" },
+          "type": { "enum": ["project-grid", "instagram-feed", "about"] },
+          "title": { "type": "string", "minLength": 1 },
+          "showInMenu": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

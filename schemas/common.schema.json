@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "common.schema.json",
+  "title": "Shared definitions",
+  "definitions": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "image": {
+      "type": "object",
+      "required": ["src", "alt"],
+      "additionalProperties": false,
+      "properties": {
+        "src": { "type": "string", "pattern": "^/?uploads/[^/].*\\.webp$" },
+        "alt": { "type": "string" },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": ["label", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "pattern": "^(https?://|mailto:|tel:|#|/).+" },
+        "external": { "type": "boolean" }
+      }
+    },
+    "inlineHtml": {
+      "type": "string",
+      "pattern": "^(?:[^<]|</?(?:a|em|strong)(?:\\s[^<>]*)?>)*$"
+    }
+  }
+}

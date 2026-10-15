@@ -1,0 +1,26 @@
+# Working material (high resolution originals, drafts)
+source/
+
+# Personal tooling and instructions
+CLAUDE.md
+.vscode/
+.claude/
+
+# Dependencies and build output
+node_modules/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Secrets and credentials
+.env
+.env.*
+*.pem
+*.key
