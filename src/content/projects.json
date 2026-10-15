@@ -280,5 +280,16 @@
         }
       }
     ]
+  },
+  {
+    "slug": "maglia-bologna",
+    "title": "Mi piace il bologna",
+    "summary": "ma sta maglia è brutta",
+    "visible": true,
+    "banner": {
+      "src": "/uploads/pasted-image-1792071517101.webp",
+      "alt": "cagare"
+    },
+    "blocks": []
   }
 ]
