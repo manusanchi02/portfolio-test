@@ -9,6 +9,16 @@ backend:
 media_folder: public/uploads
 public_folder: uploads
 
+# PNG and JPEG are converted to WebP in the browser at upload. WebP files are kept as they are.
+media_libraries:
+  all:
+    transformations:
+      png: &to_webp
+        format: webp
+        quality: 80
+        width: 2000
+      jpeg: *to_webp
+
 singletons:
   - name: site
     label: Sito e menu

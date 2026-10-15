@@ -280,16 +280,5 @@
         }
       }
     ]
-  },
-  {
-    "slug": "maglia-bologna",
-    "title": "prova di nuovo progetto",
-    "summary": "mi piace il bologna",
-    "visible": true,
-    "banner": {
-      "src": "/uploads/pasted-image-1792071189234.png",
-      "alt": "brutta sta maglia"
-    },
-    "blocks": []
   }
 ]

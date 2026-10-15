@@ -130,7 +130,7 @@ New block type:
 
 ## Images
 
-The admin does not resize or optimise images: upload files that are already ready.
+When you upload or paste a PNG or JPEG in the admin it is converted to WebP in the browser (quality 80, at most 2000 px wide, EXIF removed). WebP files are uploaded as they are: they are not resized or recompressed, so prepare them with the sizes below. Other formats (GIF, AVIF, HEIC, SVG) are rejected by the build.
 
 | Use | Format | Maximum width | Notes |
 | --- | --- | --- | --- |
